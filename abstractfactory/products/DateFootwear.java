@@ -1,7 +1,9 @@
 package abstractfactory.products;
 
-public class DateFootwear {
-    void wear() {
+import abstractfactory.products.interfaces.Footwear;
+
+public class DateFootwear implements Footwear {
+    public void wear() {
         System.out.println("Wear high heels");
     }
 }

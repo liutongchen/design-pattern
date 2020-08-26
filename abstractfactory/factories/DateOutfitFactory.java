@@ -1,6 +1,13 @@
 package abstractfactory.factories;
 
-public class DateOutfitFactory {
+import abstractfactory.products.DateAccessories;
+import abstractfactory.products.DateClothing;
+import abstractfactory.products.DateFootwear;
+import abstractfactory.products.interfaces.Accessories;
+import abstractfactory.products.interfaces.Clothing;
+import abstractfactory.products.interfaces.Footwear;
+
+public class DateOutfitFactory implements OutfitFactory {
     @Override
     public Clothing createClothing() {
         return new DateClothing();

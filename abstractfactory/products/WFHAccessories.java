@@ -1,7 +1,9 @@
 package abstractfactory.products;
 
-public class WFHAccessories {
-    void wear() {
+import abstractfactory.products.interfaces.Accessories;
+
+public class WFHAccessories implements Accessories {
+    public void wear() {
         System.out.println("Wear headset");
     }
 }
